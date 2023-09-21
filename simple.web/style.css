@@ -1,0 +1,87 @@
+<style>
+    /* CSS to set the navigation display */
+    body {
+        
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: firebrick; /* Page background color */
+    }
+
+    .navbar {
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .navbar h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .dropdown select {
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    /* Change the color of dropdown options on hover */
+    .dropdown select:hover {
+        background-color: #555;
+    }
+
+    /* CSS for calculation display */
+    .calculation {
+        background-color: #bb2a2a;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .calculation h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .calculation label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .calculation input[type="number"],
+    .calculation input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .calculation button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Change the color of the button on hover */
+    .calculation button:hover {
+        background-color: #555;
+    }
+
+    .calculation p {
+        font-size: 18px;
+        color: #7e2a2a;
+        margin-top: 10px;
+    }
+</style>

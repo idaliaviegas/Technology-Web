@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Operation Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>OPERATION</h1>
+        <div class="dropdown">
+            <select onchange="showCalculation()">
+                <option value="series-fibonacci">Series Fibonacci</option>
+                <option value="volume-cube">Space Volume Calculation</option>
+            </select>
+        </div>
+    </div>
+    <!-- Perhitungan Deret Fibonacci -->
+    <div class="calculation" id="series-fibonacci">
+        <h2>Series Fibonacci</h2>
+        <label for="fibonacci-input">Fibonacci series input:</label>
+        <input type="number" id="fibonacci-input">
+        <button onclick="calculateFibonacci()">Submit</button>
+        <p id="fibonacci-result"></p>
+    </div>
+
+    <!-- Perhitungan Volume Kubus -->
+    <div class="calculation" id="volume-cube" style="display: none;">
+        <h2>Space Volume Calculation</h2>
+        <div class="container">
+                Length : <input type="text" name="num1"><br>
+                Width : <input type="text" name="num2"><br>
+                Height : <input type="text" name="num3"><br>
+                <button onclick="calculateVolume()">Submit</button>
+        </div>
+        <p id="volume-result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -10,23 +10,19 @@
 <body>
 
     <div class="navbar">
-          
-        <h1> Idalia Francisca Viegas</h1>
+        <h1>Idalia Francisca Viegas</h1>
         <h1>2215101084</h1>
         <hr width="600px">
-        
-         <h1>OPERATION</h1>
-        
-        
-        <button onclick="simpanData()">Simpan</button>
+        <h1>OPERATION</h1>
     </div>
-        <div class="dropdown">
-            <select onchange="showCalculation()">
-                <option value="series-fibonacci">Series Fibonacci</option>
-                <option value="volume-cube">Space Volume Calculation</option>
-            </select>
-        </div>
+
+    <div class="dropdown">
+        <select onchange="showCalculation()">
+            <option value="series-fibonacci">Series Fibonacci</option>
+            <option value="volume-cube">Space Volume Calculation</option>
+        </select>
     </div>
+
     <!-- Calculation of the Fibonacci Series -->
     <div class="calculation" id="series-fibonacci">
         <h2>Series Fibonacci</h2>
@@ -40,10 +36,10 @@
     <div class="calculation" id="volume-cube" style="display: none;">
         <h2>Space Volume Calculation</h2>
         <div class="container">
-                Length : <input type="text" name="num1"><br>
-                Width : <input type="text" name="num2"><br>
-                Height : <input type="text" name="num3"><br>
-                <button onclick="calculateVolume()">Submit</button>
+            Length : <input type="text" name="num1"><br>
+            Width : <input type="text" name="num2"><br>
+            Height : <input type="text" name="num3"><br>
+            <button onclick="calculateVolume()">Submit</button>
         </div>
         <p id="volume-result"></p>
     </div>

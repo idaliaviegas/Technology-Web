@@ -3,47 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Operation Web</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portofolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-    <div class="navbar">
-        <h1>Idalia Francisca Viegas</h1>
-        <h1>2215101084</h1>
-        <hr width="600px">
-    </div>
-
-    <div class="dropdown">
-        <h1>OPERATION</h1>
-        <select onchange="showCalculation()">
-            <option value="series-fibonacci">Series Fibonacci</option>
-            <option value="volume-cube">Space Volume Calculation</option>
-        </select>
-    </div>
-
-    <!-- Calculation of the Fibonacci Series -->
-    <div class="calculation" id="series-fibonacci">
-        <h2>Series Fibonacci</h2>
-        <label for="fibonacci-input">Fibonacci series input:</label>
-        <input type="number" id="fibonacci-input">
-        <button onclick="calculateFibonacci()">Submit</button>
-        <p id="fibonacci-result"></p>
-    </div>
-
-    <!-- Cube Volume Calculation -->
-    <div class="calculation" id="volume-cube" style="display: none;">
-        <h2>Space Volume Calculation</h2>
-        <div class="container">
-            Length : <input type="text" name="num1"><br>
-            Width : <input type="text" name="num2"><br>
-            Height : <input type="text" name="num3"><br>
-            <button onclick="calculateVolume()">Submit</button>
+<body class="bg-gray-950 text-gray-500">
+    <header class="z-10 sticky bg-gray-600 py-5"> <!-- header -->
+        <div>
+            <nav class="w-9/12 flex-row mx-auto">
+                <div class="uppercase text-lg basis-1/4"> <!-- logo -->
+                    <a href="">
+                        <span class="font-extrabold text-white">IDENTIFIABLE</span>
+                        <span class="extra-light"> INFORMATION </span>
+                    </a>
+                </div>
+                <div class="basis-1/2 flex items-center justify evently"> <!-- link -->
+                    <a href="#about-me"><span>ABOUT ME</span></a>
+                    
+                </div>
+                <div class="basis-1/4 flex justify-end"> <!-- bottom dark mode -->
+                </div>
+            </nav>
         </div>
-        <p id="volume-result"></p>
+    </header>
+    <main> <!-- main content -->
+        <div class="bg-gray-600 relative -top-20 "><!-- hero section -->
+            <div class="mx-auto flex h-screen items-center w-9/12">
+                <div class="basis-1/2"> <!-- description -->
+                    <div class="flex item center"></div>
+                    <svg class="stroke-gray-400 stroke-2 h-5 w-5">
+                        <line x1="0" y1="10px" x2="10px" y2="10px"/>
+                    </svg>
+                    <h2 class="uppercase text-xs font-extralight tracking-widest">My Name is</h2>
+                    <h3 class="font-bold text-4xl text-white">
+                        <span>IDALIA</span>
+                        <span class="text-coclate-700"> VIEGAS.</span>
+                    </h3>
+                    <p>
+                        As an International Student hailing from the beautiful Country East Timor.
+                        Currently, I'm pursuing my passion for technology at UNDIKSHA, where I'm majoring in Computer Science.
+                        I'm thrilled to be in my 3rd semester,
+                        and my journey in the world of programming has been nothing short of exciting.
+                        In addition to my academic pursuits, I believe in holistic growth.
+                        That's why I actively participate in extracurricular activities.
+                        I was fortunate to be part of the prestigious UNDIKSHA SUMMER SCHOOL in 2023,
+                        where I had the opportunity to collaborate with diverse minds and expand my skill set further.
+                    </p>
+                    <div class="flex flex-row mt-5 space-x-3" id="social-media">
+                        <a href="#"><img class="w-6 h-6" src="/instagram.png" alt=""></a>
+                        <a href="#"><img class="w-6 h-6" src="img/Github.svg" alt=""></a>
+                        <a href="#"><img class="w-6 h-6" src="/facebook.png" alt=""></a>
+                        <a href="#"><img class="w-6 h-6" src="/pinterest.png" alt=""></a>
+                    </div>
+                </div> <!-- avatar -->
+                <div class="basis-1/2">
+                    <img class="mx-auto" src="img.jpeg" alt="foto ketje">
+                   
+                </div>
+            </div>
+        </div>
+        <div> 
+            <div class="flex flex-col place items-center">
+                <!-- topic -->
+                <div>
+                    <div class="flex-center">
+                        <div class="flex item center"></div>
+                        <svg class="stroke-gray-400 stroke-2 h-5 w-5">
+                            <line x1="0" y1="10px" x2="10px" y2="10px"/>
+                        </svg>
+                        <h2 class="uppercase text-xs font-extralight tracking-widest">Services</h2>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="contact-details">
+            <h2>Contact Details</h2>
+            <p>Phone: +82146684989</p>
+            <p>Email: idaliaviegas.15@gmail.com</p>
+        </div>
+        <div id="academic-history">
+            <h2>Academic History</h2>
+            <p>Graduated Senior & Junior high school in East Timor</p>
+        </div>
+        <div id="skill">
+            <h2>Skill</h2>
+            <p>Baked, Photography</p>
+        </div>
+        <div id="hobbies">
+            <h2>Hobbies</h2>
+            <p>Reading, Travelling, Listening to Music</p>
+        </div>
     </div>
+    <div id="Social-Media">
+        <h2>Social Media</h2>
+        <p>Instagram: idaliaviegas 
+        <img class="mx-auto" src="instagram.png" alt="foto ketje">
+        <img class="mx-auto" src="facebook.png" alt="foto ketje">
+        <p>idalia viegas</p>
+        <img class="mx-auto" src="pinterest.png" alt="foto ketje">
+        <p>Pinterest: idaliaviegas</p>
+    </div>
+    <div id="Address">
+        <h2><Address></Address></h2>
+        <p>Kaliuntu,jln jatayu no.5 Edutel</p>
+    </div>
+    
 
-    <script src="script.js"></script>
+    </main>
+    <footer> <!-- footer -->
+    </footer>
 </body>
 </html>

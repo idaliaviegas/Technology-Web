@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>My Portofolio</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+      
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Web Technologies</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">my Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Details</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Projects Section-->
+            <section class="py-5">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <!-- Project Card 1-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            
+                                            <title>To-Do List</title>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Tambahkan tugas...">
+    <button onclick="addTask()">Tambahkan</button>
+    <ul id="taskList"></ul>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+                                        </div>
+                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 2-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Email</h2>
+                                            <body>
+                                                <div id="app">
+                                                  <form>
+                                                    <label>Email:</label>
+                                                    <input type="email" required v-model="email">
+                                                
+                                                    <label>Password:</label>
+                                                    <input type="password" required v-model="password">
+                                                    
+                                                    <label>Role:</label>
+                                                    <select v-model="role">
+                                                      <option value="developer">Web Developer</option>
+                                                      <option value="designer">Web Designer</option>
+                                                    </select>
+                                                
+                                                    <div class="terms">
+                                                      <input type="checkbox" v-model="terms" required>
+                                                      <label>Technologies Studies</label>
+                                                    </div>
+                                                
+                                                    <div>
+                                                      <input type="checkbox" v-model="names" value="html">
+                                                      <label>html</label>
+                                                    </div>
+                                                
+                                                    <div class="terms">
+                                                      <input type="checkbox" v-model="names" value="css">
+                                                      <label>css</label>
+                                                    </div>
+                                                
+                                                    <div>
+                                                      <input type="checkbox" v-model="names" value="javascript">
+                                                      <label>Javascript</label>
+                                                    </div>
+                                                  </form>
+                                                
+                                                  <p>Email: {{ displayedEmail }} </p>
+                                                  <p>Password: {{ password }} </p>
+                                                  <p>Role: {{ role }} </p>
+                                                  <p>Terms accepted</p>
+                                                  <p>Names: {{ names }} </p>
+                                                </div>
+                                              
+                                                <!-- Include Vue.js -->
+                                                <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+                                              
+                                                <script>
+                                                  new Vue({
+                                                    el: '#app',
+                                                    data: {
+                                                      email: '',
+                                                      password: '',
+                                                      role: '',
+                                                      terms: false,
+                                                      names: []
+                                                    },
+                                                    computed: {
+                                                      displayedEmail: function() {
+                                                        return this.email;
+                                                      }
+                                                    }
+                                                  });
+                                                </script>
+                                              </body>
+                                              </html>
+                                                  
+                                        </div>
+                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to action section-->
+            <section class="py-5 bg-gradient-primary-to-secondary text-white">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+       
+       
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

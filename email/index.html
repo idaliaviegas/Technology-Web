@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Email Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <form>
+      <label>Email:</label>
+      <input type="email" required v-model="email">
+  
+      <label>Password:</label>
+      <input type="password" required v-model="password">
+      
+      <label>Role:</label>
+      <select v-model="role">
+        <option value="developer">Web Developer</option>
+        <option value="designer">Web Designer</option>
+      </select>
+  
+      <div class="terms">
+        <input type="checkbox" v-model="terms" required>
+        <label>Technologies Studies</label>
+      </div>
+  
+      <div>
+        <input type="checkbox" v-model="names" value="html">
+        <label>html</label>
+      </div>
+  
+      <div class="terms">
+        <input type="checkbox" v-model="names" value="css">
+        <label>css</label>
+      </div>
+  
+      <div>
+        <input type="checkbox" v-model="names" value="javascript">
+        <label>Javascript</label>
+      </div>
+    </form>
+  
+    <p>Email: {{ displayedEmail }} </p>
+    <p>Password: {{ password }} </p>
+    <p>Role: {{ role }} </p>
+    <p>Terms accepted</p>
+    <p>Names: {{ names }} </p>
+  </div>
+
+  <!-- Include Vue.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        email: '',
+        password: '',
+        role: '',
+        terms: false,
+        names: []
+      },
+      computed: {
+        displayedEmail: function() {
+          return this.email;
+        }
+      }
+    });
+  </script>
+</body>
+</html>
